@@ -10,4 +10,8 @@ class Expense(models.Model):
     amount = models.BigIntegerField()
     user = models.ForeignKey(User,on_delete=models.RESTRICT)
 
-
+class income(models.Model):
+    text = models.CharField(max_length=300)
+    date = models.DateTimeField()
+    amount = models.BigIntegerField()
+    user = models.ForeignKey(User,on_delete=models.RESTRICT)
